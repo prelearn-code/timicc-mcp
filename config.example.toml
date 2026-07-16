@@ -1,0 +1,9 @@
+# Copy this table into ~/.codex/config.toml and replace the absolute path.
+[mcp_servers.timicc]
+command = "/absolute/path/to/timicc-mcp/.venv/bin/python"
+args = ["-m", "timicc_worker.server"]
+env_vars = ["TIMICC_API_KEY", "TIMICC_BASE_URL", "TIMICC_MODELS", "TIMICC_STATE_DIR"]
+startup_timeout_sec = 20
+tool_timeout_sec = 1800
+required = false
+default_tools_approval_mode = "prompt"
